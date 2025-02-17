@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Full-page background */
+body {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Main weather app container */
+.weather-app {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Title */
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Search bar container */
+.search-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.search-container input {
+  width: 65%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-container button {
+  width: 30%;
+  background-color: #4facfe;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out;
+}
+
+.search-container button:hover {
+  background-color: #00c6fb;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Weather Card */
+.weather-card {
+  background: #4facfe;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.weather-card h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.weather-card p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.weather-card img {
+  width: 80px;
+}
+
+/* Forecast Section */
+.forecast-container {
+  margin-top: 20px;
+}
+
+.forecast-container h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.forecast-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Individual forecast cards */
+.forecast-card {
+  background: #4facfe;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 150px;
+  font-size: 14px;
+}
+
+.forecast-card img {
+  width: 50px;
+}
+
+.forecast-card p {
+  margin: 5px 0;
+}
+
+/* Search History */
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.history-list li {
+  cursor: pointer;
+  padding: 8px;
+  background: #4facfe;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.history-list li:hover {
+  background: #d1ecfc;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .weather-app {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .search-container {
+    flex-direction: column;
+  }
+
+  .search-container input,
+  .search-container button {
+    width: 100%;
+  }
+
+  .forecast-grid {
+    flex-direction: column;
+  }
+
+  .forecast-card {
+    width: 100%;
+  }
+}
